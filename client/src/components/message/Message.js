@@ -14,7 +14,7 @@ function Message ({text, type}) {
 
         const time = setTimeout(() => {
             setVisivil(false)
-        }, 6000)
+        }, 4000)
 
         return () => clearTimeout(time);
 

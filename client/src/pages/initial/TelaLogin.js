@@ -45,11 +45,13 @@ function TelaLogin() {
         setAcesso(false);
       }
     }
+    
   };
 
   const handleLogout = async (e) => {
     setUser(null);
     setErro("");
+
   };
 
   return (

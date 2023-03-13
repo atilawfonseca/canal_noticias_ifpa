@@ -1,36 +1,25 @@
 const express = require("express");
-const routes = require("./router_login");
+const routes = require("./src/routers/router_login");
+const bodyParser = require('body-parser');
+
 const app = express();
 const cors = require("cors");
-const port = 5000;
+const port = 5000 || process.env.port;
 
 app.use(express.json());
 app.use(cors());
 app.use(routes);
 
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// parse requests of content-type - application/json
+app.use(bodyParser.json())
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-//const mysql = require('mysql')
-
-// const db = mysql.createPool({
-//   host: 'localhost',
-//   port: '3306',
-//   user: 'root',
-//   password: 'atila',
-//   database: 'cruddabase',
-// });
-
-// app.get('/', (req, res) => {
-
-//   const sqlInsert = "INSERT INTO user_admins (name_user, password, email) VALUES ('atilateste', '123', 'atila@if.edu.br');"
-//   db.query(sqlInsert, (error, result) => {
-//     res.send(error)
-
-//   })
-
-// })
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
