@@ -1,0 +1,9 @@
+comandos para rodar o client
+npm start
+
+comando para rodar o servidor
+
+node index.js
+
+para usar o nodemon de forma automática melhor inicializar o servidor com o comando:
+npm run devStart

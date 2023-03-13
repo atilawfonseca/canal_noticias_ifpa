@@ -1,0 +1,7 @@
+Instalação e configuração do mysql:
+
+https://www.youtube.com/watch?v=xGk_R8Q1epU&t=306s
+
+criação de login:
+
+https://www.youtube.com/watch?v=5KqP3Vx8Y4s

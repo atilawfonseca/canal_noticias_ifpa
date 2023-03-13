@@ -1,0 +1,38 @@
+NODEMON
+
+O nodemon é uma biblioteca que ajuda no desenvolvimento de sistemas com o Node. js reiniciando automaticamente o servidor. Imagine a seguinte situação, 
+você está desenvolvendo uma aplicação com o Node, e criou uma rota, para acessá-la, é preciso reiniciar o servidor.
+
+No arquivo package.json foi criardo um script devStart que inicia o servidor e qualquer alteração não precisa parar e inicializar novamente o servidor. 
+Basta o seguinte comando: npm run devStart
+
+CORS 
+
+O que é o Compartilhamento de recursos de origem cruzada (CORS)? O compartilhamento de recursos de origem cruzada (CORS) é um protocolo 
+de segurança em navegadores modernos que permite ou restringe o compartilhamento de recursos entre diferentes origens, dependendo de qual 
+origem iniciou a solicitação HTTP.
+
+AXION
+
+O Axios é um biblioteca que permite uma integração do seu projeto React para qualquer serviço de API disponível. Ele é uma biblioteca leve
+e também uma alternativa para quem usa o fetch api.
+
+npm install axios
+
+EXPRESS
+
+- vai utilizar o express para o backend... primeiro passo é fazer a autenticação do usuário. 
+a documentação vai encontra em:
+
+https://expressjs.com/en/starter/installing.html
+
+video mostrando a criação da aplicação cliente e serve 
+https://www.youtube.com/watch?v=w3vs4a03y3I
+
+
+MYSQL
+
+https://www.youtube.com/watch?v=T8mqZZ0r-RA
+
+usar 
+Loopback framework Entender - melhor como funciona
