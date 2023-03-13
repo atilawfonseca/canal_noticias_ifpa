@@ -1,0 +1,5 @@
+/*object-fit é uma maneira muito boa de recortar a imagem para se ajustar a tela*/
+.container img {
+    height: 100vh;
+    object-fit: cover;
+}

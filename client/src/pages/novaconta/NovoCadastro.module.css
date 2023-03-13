@@ -1,0 +1,56 @@
+.container {
+    box-sizing: border-box;
+    margin: 0.75em;
+    color: white;
+
+}
+.container h2 {
+    margin-bottom: 1em;
+    font-weight: bolder;
+
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.container form div {
+    width: 90vw;
+    max-width: 850px;
+    border-bottom: 1px solid white;
+    padding: .25em .5em;
+}
+
+.container form div svg {
+    padding: 0px 5px;
+    font-size: 2em;
+}
+.container a {
+    margin-top: 10em;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    padding: .5em;
+    text-align: center;
+    align-items: center;
+}
+.container svg {
+    font-size: 2.5em;
+    padding: 0.25em;
+}
+
+.container a p {
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (min-width:900px) {
+    .container a {
+        max-width: 50%;
+        margin: 100px auto;
+    }
+}

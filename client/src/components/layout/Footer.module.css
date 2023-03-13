@@ -1,0 +1,10 @@
+.footer_container {
+    width: 100vw;    
+    background-color: var(--vermelho);
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: justify;
+    position: absolute;
+    bottom: 0px;
+}

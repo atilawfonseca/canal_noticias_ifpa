@@ -1,0 +1,20 @@
+input {
+    margin-bottom: 0.25em;
+    background-color: transparent;
+    border: none;
+    width: 65vw;
+    max-width: 600px;
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--Montserrat);
+}
+input:focus {
+    box-shadow: 0 0 0 0 ;
+    outline: 0;
+}
+input::placeholder {
+    color: antiquewhite;
+    
+}

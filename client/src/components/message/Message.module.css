@@ -1,0 +1,21 @@
+.message {
+    width: 100%;
+    min-width: 150px;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+.message p {
+    margin: 0px;
+}
+.sucesso {
+    color: green;
+    background-color: rgb(207, 243, 154);
+}
+
+.erro {
+    color: red;
+    background-color: rgb(247, 199, 199);
+}
