@@ -1,4 +1,4 @@
-input {
+.input {
     margin-bottom: 0.25em;
     background-color: transparent;
     border: none;
@@ -10,11 +10,19 @@ input {
     text-align: center;
     font-family: var(--Montserrat);
 }
-input:focus {
+.input:focus {
     box-shadow: 0 0 0 0 ;
     outline: 0;
 }
-input::placeholder {
+.input::placeholder {
     color: antiquewhite;
+    text-transform: lowercase;
     
+}
+.text {
+    text-transform: uppercase;
+}
+
+.email {
+    text-transform: lowercase;
 }

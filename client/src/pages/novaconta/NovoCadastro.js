@@ -3,35 +3,51 @@ import {ImUserPlus, ImMail3, ImPhone, ImLock, ImHome} from "react-icons/im"
 import Button from "../../components/button/Button"
 import styles from "./NovoCadastro.module.css"
 import {Link} from 'react-router-dom'
+import {useEffect, useState} from 'react';
 
 function NovoCadastro() {
+    const [userName, setUserName] = useState("");
+    const [userMail, setUserMail] = useState("");
+    const [userPhone, setUserPhone] = useState("");
+    const [userPass, setUserPass] = useState("");
+    const [userPassRep, setUserPassRep] = useState("");
+
+    useEffect(()=> {})
+
+    const cadastrarUser = async (e) => {
+        e.preventDefault();
+        console.log(userName, userMail, userPhone, userPass, userPassRep);
+
+        
+    }
+
     return (
         <div className={styles.container}>
             <h2>Cadastrar conta de administrador </h2>
             <form>
                 <div>
                     <ImUserPlus />
-                    <Input texto="Nome completo" tipo="text"  />
+                    <Input texto="Nome completo" tipo="text" dado={(e) => {setUserName(e.target.value)}} />
                 </div>
                 <div>
                     <ImMail3 />
-                    <Input texto="Digite seu email" tipo="email"  />
+                    <Input texto="Digite seu email" tipo="email"  dado={(e) => {setUserMail(e.target.value)}} />
                 </div>
 
                 <div>
                     <ImPhone />
-                    <Input texto="Digite seu telefone" tipo="number"  />
+                    <Input texto="Digite seu telefone" tipo="tel" dado={(e) => {setUserPhone(e.target.value)}} />
                 </div>
 
                 <div>
                     <ImLock />
-                    <Input texto="Digite sua senha" tipo="password"  />
+                    <Input texto="Digite sua senha" tipo="password" dado={(e) => {setUserPass(e.target.value)}} />
                 </div>
                 <div>
                     <ImLock />
-                    <Input texto="Repita a senha" tipo="password"  />
+                    <Input texto="Repita a senha" tipo="password" dado={(e) => {setUserPassRep(e.target.value)}} />
                 </div>
-                <Button nomeButton="Cadastrar"/>
+                <Button nomeButton="Cadastrar" click={cadastrarUser}/>
             </form>
 
             <Link to='/'>
