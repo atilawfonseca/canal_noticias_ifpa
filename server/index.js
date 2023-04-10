@@ -31,6 +31,21 @@ app.get("/api/get", (req, resp) => {
     })
 });
 
+app.post("/api/insert", (req, resp) => {
+
+  const name = req.body.contaName;
+  const mail = req.body.contaMail; 
+  const phone = req.body.contaPhone; 
+  const password = req.body.contaPass; 
+
+  const sqlInsert = "INSERT INTO `cruduserconta`.`userconta` (`username`, `user_email`, `usertelefone`, `user_senha`) VALUES (?, ?, ?, ?)";
+  
+  dbConn.query(sqlInsert, [name, mail, phone, password], (error, result)=> {
+    console.log(result);
+  })
+
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

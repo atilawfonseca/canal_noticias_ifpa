@@ -4,19 +4,35 @@ import Button from "../../components/button/Button"
 import styles from "./NovoCadastro.module.css"
 import {Link} from 'react-router-dom'
 import {useEffect, useState} from 'react';
+import Axios from "axios";
 
 function NovoCadastro() {
     const [userName, setUserName] = useState("");
     const [userMail, setUserMail] = useState("");
     const [userPhone, setUserPhone] = useState("");
     const [userPass, setUserPass] = useState("");
-    const [userPassRep, setUserPassRep] = useState("");
+
+    const user = {
+        name:userName,
+        mail:userMail,
+        phone: userPhone,
+        password: userPass
+    }
 
     useEffect(()=> {})
 
     const cadastrarUser = async (e) => {
-        e.preventDefault();
-        console.log(userName, userMail, userPhone, userPass, userPassRep);
+        //e.preventDefault();
+        //console.log(userName, userMail, userPhone, userPass, userPassRep);
+        Axios.post("http://localhost:5000/api/insert", {
+            contaName:user.name, 
+            contaMail:user.mail,
+            contaPhone:user.phone, 
+            contaPass:user.password
+        }).then(() => {
+            alert("Sucessful Insert")
+        });
+        
 
         
     }
@@ -43,10 +59,7 @@ function NovoCadastro() {
                     <ImLock />
                     <Input texto="Digite sua senha" tipo="password" dado={(e) => {setUserPass(e.target.value)}} />
                 </div>
-                <div>
-                    <ImLock />
-                    <Input texto="Repita a senha" tipo="password" dado={(e) => {setUserPassRep(e.target.value)}} />
-                </div>
+                
                 <Button nomeButton="Cadastrar" click={cadastrarUser}/>
             </form>
 

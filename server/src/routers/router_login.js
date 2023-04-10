@@ -2,14 +2,17 @@ const express = require("express");
 const routes = express.Router();
 
 
-const users = [
+/* const users = [
   {
     id: 1,
     name: "Atila",
     email: "atilafonseca@ifpa.edu.br",
     password: "123456",
   },
-];
+]; */
+const users = [];
+
+
 
 routes.post("/login", (req, res) => {
   const { email, password } = req.body;

@@ -1,0 +1,16 @@
+>antes de escrever no banco de dados precisa criar um sistema de validação do formulário. Estudar useForm do react-hook-form
+para saber como fazer. 
+        Video ensinando sobre useForm
+        link: https://www.youtube.com/watch?v=4oCH5WaJHzk
+        link: https://www.youtube.com/watch?v=qH272VSWje4
+        link: https://www.youtube.com/watch?v=selI69g6oc4
+        link: https://www.youtube.com/watch?v=XSbMSSdGSdg
+
+        formulario avançado:
+        https://www.youtube.com/watch?v=XSbMSSdGSdg
+
+>como fazer com que as diferentes rotas façam comunicação com o banco de dados no express
+
+
+>entendendo melhor as rotas para aplicar no canal de noticias:
+        link: https://www.youtube.com/watch?v=voXTVTW73E8
