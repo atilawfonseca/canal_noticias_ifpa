@@ -24,7 +24,7 @@ function NovoCadastro() {
     const cadastrarUser = async (e) => {
         //e.preventDefault();
         //console.log(userName, userMail, userPhone, userPass, userPassRep);
-        Axios.post("http://localhost:5000/api/insert", {
+        Axios.post("http://localhost:5000/users/api/insert", {
             contaName:user.name, 
             contaMail:user.mail,
             contaPhone:user.phone, 

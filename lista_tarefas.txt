@@ -9,8 +9,12 @@ para saber como fazer.
         formulario avançado:
         https://www.youtube.com/watch?v=XSbMSSdGSdg
 
->como fazer com que as diferentes rotas façam comunicação com o banco de dados no express
+>como fazer com que as diferentes rotas façam comunicação com o banco de dados no express -- OK
 
 
 >entendendo melhor as rotas para aplicar no canal de noticias:
         link: https://www.youtube.com/watch?v=voXTVTW73E8
+
+>verificar como é realizada a autenticação de usuário em requisições com o bd. 
+        - Entendendo autenticação com jwt - usa typeScript:
+        https://www.youtube.com/watch?v=r4gjCn2r-iw
